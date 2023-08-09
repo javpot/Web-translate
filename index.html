@@ -8,17 +8,19 @@
   </head>
   <body>
     <h1>Transcribe</h1>
-    <select>
+    <select id="select_dialect">
       <option data-lang="id-EN" data-name="English">English</option>
-      <option data-lang="id-FR" data-name="Francais">Francais</option>
-      <option data-lang="id-ES" data-name="Espanol">Espanol</option>
+      <option data-lang="id-FR" data-name="French">Francais</option>
+      <option data-lang="id-ES" data-name="Spanish">Espanol</option>
     </select>
     <select>
       <option data-lang="id-EN" data-name="English">English</option>
       <option data-lang="id-FR" data-name="Francais">Francais</option>
       <option data-lang="id-ES" data-name="Espanol">Espanol</option>
     </select>
-    <button><img src="/Images/Record.png" alt="record-button" /></button>
+    <button id="record-button">
+      <img src="/Images/Record.png" alt="record-button" onclick="listening()" />
+    </button>
   </body>
   <script src="index.js"></script>
 </html>
